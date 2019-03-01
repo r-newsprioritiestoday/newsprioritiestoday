@@ -13,7 +13,7 @@ python scraper/webscraper.py
 
 cd data
 git commit -am "new data"
-git commit push origin master
+git push origin master
 
 cd ..
 git commit -am "new data"
