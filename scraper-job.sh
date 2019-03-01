@@ -11,8 +11,10 @@ git submodule update
 
 python scraper/webscraper.py
 
-cd data && git commit -am "new data"
-cd data && git commit push origin master
+cd data
+git commit -am "new data"
+git commit push origin master
 
+cd ..
 git commit -am "new data"
 git push origin master
