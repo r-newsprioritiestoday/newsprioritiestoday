@@ -1,0 +1,9 @@
+[submodule "scraper"]
+	path = scraper
+	url = https://github.com/r-newsprioritiestoday/newsprioritiestoday-scraper
+[submodule "redditbot"]
+	path = redditbot
+	url = https://github.com/r-newsprioritiestoday/newsprioritiestoday-redditbot
+[submodule "data"]
+	path = data
+	url = https://github.com/r-newsprioritiestoday/newsprioritiestoday-data
