@@ -7,14 +7,16 @@
 cd "${0%/*}"
 
 git pull origin master
-git submodule update
+git submodule update --recursive
 
 python scraper/webscraper.py
 
 cd data
-git commit -am "new data"
+git add .
+git commit -m "new data"
 git push origin master
 
 cd ..
-git commit -am "new data"
+add .
+git commit -m "new data"
 git push origin master
