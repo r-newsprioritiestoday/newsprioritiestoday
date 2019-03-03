@@ -7,10 +7,36 @@ If you want to contribute, please take a look at the ***Contribute*** section be
 
 ## Content
 
+We gather summaries of news sources around the world to get a better feeling on how each country priorizises events as they are happening.
+
+Once a day you will find a summary of the data posted over on [reddit.com/r/newsprioritiestoday](https://reddit.com/r/newsprioritiestoday)
+
 This project is currently structured as follows:
 - [Scraper](https://github.com/r-newsprioritiestoday/newsprioritiestoday-scraper) - This is the script that scrapes the news sources. Please visit this repository directly to see how you can contribute here (e.g. add a news source or optimize the scraping)
 - [Data](https://github.com/r-newsprioritiestoday/newsprioritiestoday-data) - Here you find all data that we have collected. Feel free to use it for your own projects.
 - [Redditbot](https://github.com/r-newsprioritiestoday/newsprioritiestoday-redditbot) - The bot that posts the most daily summary on our subreddit.
+
+## How to run
+
+Install the following python packages:
+```
+pip install tinydb
+pip install tinydb_serialization
+pip install requests_html
+```
+
+
+Run the following commands to setup a working environment for the scripts:
+
+```
+mkdir working-dir
+cd working-dir
+git clone git@github.com:r-newsprioritiestoday/newsprioritiestoday.git
+git clone git@github.com:r-newsprioritiestoday/newsprioritiestoday-scraper.git
+git clone git@github.com:r-newsprioritiestoday/newsprioritiestoday-data.git
+```
+
+Now you can run the `newsprioritiestoday/scraper-job.sh` script to gather the news sites.
 
 ## Contributions 
 
