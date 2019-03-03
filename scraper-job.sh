@@ -6,11 +6,19 @@
 
 cd "${0%/*}"
 
+cd ..
+
+cd newsprioritytoday-data
+git pull origin master
+cd ..
+
+cd newsprioritytoday-scraper
 git pull origin master
 
-python scraper/webscraper.py
+python webscraper.py
 
-cd data
+cd ..
+cd newprioritytoday-data
 git add .
 git commit -m "new data"
 git push origin master
