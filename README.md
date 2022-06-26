@@ -9,12 +9,15 @@ If you want to contribute, please take a look at the ***Contribute*** section be
 
 We gather summaries of news sources around the world to get a better feeling on how each country priorizises events as they are happening.
 
-Once a day you will find a summary of the data posted over on [reddit.com/r/newsprioritiestoday](https://reddit.com/r/newsprioritiestoday)
-
 This project is currently structured as follows:
-- [Scraper](https://github.com/r-newsprioritiestoday/newsprioritiestoday-scraper) - This is the script that scrapes the news sources. Please visit this repository directly to see how you can contribute here (e.g. add a news source or optimize the scraping)
+- [Scraper](https://github.com/r-newsprioritiestoday/newsprioritiestoday-scraper) - First a scraper gets the raw HTML data directly from news sites around the world. This data is saved under the data repository for future use.
+- [Processor](https://github.com/r-newsprioritiestoday/newsprioritiestoday-processor) - Then a processor is run over each snapshot of the newspages to bring it into a machine readable format. Each article is sorted by date, headline and a short summary if available.
+- [Translator](https://github.com/r-newsprioritiestoday/newsprioritiestoday-translator) - As we have international news sites each processed entry is then translated to english for easy readability.
+- [Website](https://github.com/r-newsprioritiestoday/r-newsprioritiestoday.github.io) - A serverless website is hosted on github pages to easily scroll through the latest news.
+
+
 - [Data](https://github.com/r-newsprioritiestoday/newsprioritiestoday-data) - Here you find all data that we have collected. Feel free to use it for your own projects.
-- [Redditbot](https://github.com/r-newsprioritiestoday/newsprioritiestoday-redditbot) - The bot that posts the most daily summary on our subreddit.
+
 
 ## How to run
 
